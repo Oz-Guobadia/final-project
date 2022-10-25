@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Asul:wght@400;700&family=Euphoria+Script&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/b6b8ccae60.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -25,33 +27,47 @@
     </header>
     
     <h2>Contact Us</h2>
-    <div class="names">
-        <input type="text" value="" id="myInput" class="first">
-        <input type="text" value="" id="myInput" class="last">
-    </div>
-    
-    <input type="text" value="" id="myInput" class="email">
 
-    <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Programs</button>
-        
-        <div id="myDropdown" class="dropdown-content">
-          <a href="#">Job Connection Center</a>
-          <a href="#">Career Path Program</a>
-          <a href="about.html">Bitwise</a>
-          <a href="about.html">Reentery</a>
-          
-        </div>
-      </div> 
+    <div class="container">
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-    <input type="text" value="" id="myInput" class="descipt">
-
-    <button class="sub">Summit</button>
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Your email adress..">
+      
+          <label for="department">Department</label>
+          <select id="department" name="department">
+            <option value="jcc">JCC</option>
+            <option value="bitwise">Bitwise</option>
+            <option value="reentry">Reentry</option>
+            <option value="career path">Career Path</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
 
      <footer>
-            <a href="" class="colum-3">privacy</a>
-            <a href="" class="colum-3">terms</a>
-            <a href="" class="colum-3">copyright©</a>
+      
+      <div class="social-link">
+            <a href="https://www.facebook.com/GoodwillNow/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.linkedin.com/company/goodwill-northwest-ohio-inc./mycompany/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/goodwillnow" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+
+        </div>
+
+            <a href="" class="colum-3">Privacy</a>
+            <a href="" class="colum-3">Terms</a>
+            <a href="" class="colum-3">Copyright©</a>
     </footer>
 
     <script src="js/script.js"></script>
